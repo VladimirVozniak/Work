@@ -5,28 +5,29 @@
 let obj = [{
     name: 'Вова',
     age: 22,
-    hometown: 'Шахты'
+    hometown: 'Шахты',
+    work: 'ExceedTeam'
 }, {
     name: 'Илья',
     age: 21,
-    hometown: 'Ростов'
+    hometown: 'Шахты',
+    work: 'ExceedTeam'
 }, {
     name: 'Саша',
     age: 30,
-    hometown: 'Шахты'
+    hometown: 'Шахты',
+    work: 'ExceedTeam'
 }, {
     name: 'Аня',
     age: 33,
-    hometown: 'Шахты'
+    hometown: 'Шахты',
+    work: 'ExceedTeam'
 }]
 
 qwe = (arr, value1, value2) => {
-    for (elem of arr) {
-        if (elem.age === value1 && elem.hometown === value2)
-            return true
-        else
-            return false
-    }
+    return (arr.length === arr.filter((elem =>
+        elem.work === value1 &&
+        elem.hometown === value2)).length)
 }
 
-console.log(qwe(obj, 30, 'Шахты'))
+console.log(qwe(obj, 'ExceedTeam', 'Шахты'))
