@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test project</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="script.js"></script>
+</head>
+<style>
+    body {
+        background: #ecedef;
+        font: caption;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div1 {
+        display: flex;
+        flex-direction: column;
+        border: 0px solid black;
+        border-radius: 5px;
+        padding: 18px;
+        background: #ffffff;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.05);
+        width: 700px;
+    }
+
+    .div2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .span1 {
+        padding: 24px;
+        border-radius: 30px;
+        display: block;
+        background-image: url("https://sun9-3.userapi.com/impg/ljniBK5KU0jtOjMnfkIlWEoSZ-Dp74Ioy8647Q/Vm9VZfr8Oqo.jpg?size=499x499&quality=96&sign=3f88dd726bfefd614c32b8c3e48c3dd8&type=album");
+        background-size: cover;
+    }
+
+    .div3 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        font-weight: bold
+    }
+
+    .span2 {
+        margin: 10px 0;
+        line-height: 1.5;
+    }
+
+    .img2 {
+
+    }
+
+    .div4 {
+        display: flex;
+        box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.15);
+        margin-top: 10px;
+        padding-top: 10px;
+        justify-content: space-between;
+    }
+
+    .like {
+        color: #646d79;
+        font-size: 15px;
+        padding: 0 10px 0 5px;
+    }
+
+    .repost {
+        color: #646d79;
+        font-size: 15px;
+        padding: 0 10px 0 5px;
+    }
+
+    .view {
+        text-align: right;
+        color: #c1c5cc;
+        font-size: 13px;
+        padding-left: 5px;
+    }
+
+    .like_img {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ctitle%3Elike_outline_24%3C%2Ftitle%3E%3Cpath%20d%3D%22M0%2C0H24V24H0Z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M17%2C2.9A6.43%2C6.43%2C0%2C0%2C1%2C23.4%2C9.33c0%2C3.57-1.43%2C5.36-7.45%2C10l-2.78%2C2.16a1.9%2C1.9%2C0%2C0%2C1-2.33%2C0L8.05%2C19.37C2%2C14.69.6%2C12.9.6%2C9.33A6.43%2C6.43%2C0%2C0%2C1%2C7%2C2.9a6.46%2C6.46%2C0%2C0%2C1%2C5%2C2.54A6.46%2C6.46%2C0%2C0%2C1%2C17%2C2.9ZM7%2C4.7A4.63%2C4.63%2C0%2C0%2C0%2C2.4%2C9.33c0%2C2.82%2C1.15%2C4.26%2C6.76%2C8.63l2.78%2C2.16a.1.1%2C0%2C0%2C0%2C.12%2C0L14.84%2C18c5.61-4.36%2C6.76-5.8%2C6.76-8.63A4.63%2C4.63%2C0%2C0%2C0%2C17%2C4.7c-1.56%2C0-3%2C.88-4.23%2C2.73L12%2C8.5l-.74-1.07C10%2C5.58%2C8.58%2C4.7%2C7%2C4.7Z%22%20fill%3D%22%23828a99%22%2F%3E%3C%2Fsvg%3E");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        padding: 12px
+    }
+
+    .repost_img {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22m0%200h24v24h-24z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22m12.1%207.87v-3.47a1.32%201.32%200%200%201%202.17-1l8.94%207.6a1.32%201.32%200%200%201%20.15%201.86l-.15.15-8.94%207.6a1.32%201.32%200%200%201%20-2.17-1v-3.45c-4.68.11-8%201.09-9.89%202.87a1.15%201.15%200%200%201%20-1.9-1.11c1.53-6.36%205.51-9.76%2011.79-10.05zm1.8-2.42v4.2h-.9c-5.3%200-8.72%202.25-10.39%206.86%202.45-1.45%205.92-2.16%2010.39-2.16h.9v4.2l7.71-6.55z%22%20fill%3D%22%23828a99%22%2F%3E%3C%2Fsvg%3E");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        padding: 12px
+    }
+
+    .view_img {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20height%3D%2210%22%20viewBox%3D%221%202%2014%2010%22%20width%3D%2214%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20style%3D%22fill%3A%23828a99%3B%22%3E%3Cpath%20d%3D%22m8%2012c-4.2%200-7-4-7-5s2.8-5%207-5%207%204%207%205-2.8%205-7%205zm0-1.5c1.9%200%203.5-1.6%203.5-3.5s-1.6-3.5-3.5-3.5-3.5%201.6-3.5%203.5%201.6%203.5%203.5%203.5zm0-1.9c-.9%200-1.6-.7-1.6-1.6s.7-1.6%201.6-1.6%201.6.7%201.6%201.6-.7%201.6-1.6%201.6z%22%2F%3E%3C%2Fsvg%3E");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        padding: 8px
+    }
+    .view_div{
+        display: flex;
+        size: 10px;
+        flex-direction: row;
+        align-items: center;
+    }
+</style>
+<body>
+<div class="div1">
+    <div class="div2">
+        <span class="span1"></span>
+        <div class="div3">
+            <span style="color: #365881">Exceed Team</span>
+            <span style="color: #939393">2 дек в 16:44</span>
+        </div>
+    </div>
+    <p class="span2">
+        Отличные новости!
+        <br>
+        А мы снова открываем набор стажеров-разработчиков в связи с расширением компании в Таганроге!
+        <br>
+        Не жди Нового Года, чтобы начать новую жизни, а начни делать шаги в сферу IT уже сейчас. Уже в 2021 ты сможешь
+        стать частью нашей команды
+    </p>
+    <img src="https://img2.akspic.ru/previews/0/7/6/5/6/165670/165670-prostota-graficeskij_dizajn-materialnoe_svojstvo-purpurnyj_cvet-polutona_i_ottenki-550x310.jpg" class="img2">
+    <div class="div4">
+        <div>
+            <a class="like_img"></a>
+            <a class="like">46</a>
+            <a class="repost_img"></a>
+            <a class="repost">13</a>
+        </div>
+        <div class="view_div">
+            <a class="view_img"></a>
+            <a class="view">1.4К</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
