@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test project</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="script.js"></script>
+</head>
+<style>
+    body {
+        background-color: hsl(126, 46%, 86%);
+        margin: 0;
+        width: 422px;
+        height: 60px;
+        max-width: 422px;
+        max-height: 60px;
+        margin: 0 auto
+    }
+
+    .pad1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        padding: 7px;
+        box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.35);
+        margin-top: 35px;
+    }
+
+    .pad2 {
+        background-color: white;
+        padding: 20px;
+        margin-top: 30px;
+        box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.35);
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .image {
+        border: 0px solid black;
+        border-radius: 50%;
+        background-color: #eaeaea;
+        background-image: url("https://elmar.com.ua/design/themes/elmar/media/images/icons/no_image.png");
+        background-size: 115px;
+        background-position: center;
+        padding: 30px;
+        margin-right: 10px;
+    }
+
+    .box_pages {
+        padding-left: 10px;
+    }
+
+    .pages {
+        padding: 0 5px;
+        color: rgba(141, 141, 141, 0.34);
+    }
+
+    .active_page {
+        padding: 0 5px;
+    }
+</style>
+<body>
+<div class="main_div">
+    <div class="pad1">
+        <a class="image">
+        </a>
+        <b>User name</b>
+        <div class="box_pages">
+            <u class="active_page">Tab 1</u>
+            <a class="pages">Tab 2</a>
+            <a class="pages">Tab 3</a>
+        </div>
+    </div>
+    <div class="pad2" align="justify">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor augue eu dolor mollis, vel faucibus ex
+        varius. Nulla facilisi. Praesent volutpat ut tellus ac ultricies. Quisque nec malesuada quam. Aenean augue
+        odio, feugiat eu laoreet et, semper nec lectus. Curabitur consequat molestie sodales. Donec pulvinar
+        consectetur ante, eget volutpat velit. Maecenas consequat, arcu vel convallis pellentesque, quam ante
+        facilisis velit, in lobortis lectus sem sit amet ligula. Nulla ac lorem tincidunt, pretium neque tempor,
+        efficitur nibh. Nulla dapibus ex arcu, ut semper quam laoreet quis. Sed auctor fringilla magna, eget
+        ultricies nisl suscipit at.
+    </div>
+</div>
+</body>
+</html>
