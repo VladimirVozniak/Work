@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test project</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="script.js"></script>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 500px;
+        margin: 10px auto;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        background-color: #3d3d3d;
+        color: white;
+        padding: 8px;
+    }
+
+    .pages {
+        width: 3.5%;
+    }
+
+    #active {
+        background-color: #ec6f3a;
+    }
+</style>
+<body>
+<a>< Previous</a>
+<a class="pages">1</a>
+<a class="pages">2</a>
+<a class="pages" id="active">3</a>
+<a class="pages">4</a>
+<a class="pages">5</a>
+<a class="pages">6</a>
+<a>Next ></a>
+<a>Last >></a>
+</body>
+</html>
