@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test project</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="script.js"></script>
+</head>
+
+<style>
+    body {
+        font-family: sans-serif;
+        background-color: #4c6075;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hosting {
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 5px;
+        box-shadow: 0 0 45px 0;
+        justify-content: space-around;
+        width: 600px;
+        padding: 8px;
+        column-gap: 10px;
+        column-rule: 1px gray;
+    }
+
+    .block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    img {
+        width: 100px;
+    }
+
+    .name {
+        color: #f55a3d;
+        font-weight: bold;
+        margin: 8px;
+    }
+
+    .price {
+        font-size: 85%;
+        margin: 10px;
+    }
+
+    button {
+        border: 0px solid;
+        border-radius: 2px;
+        background-color: #f55a3d;
+        color: white;
+        padding: 5px 10px;
+    }
+</style>
+
+<body>
+<div class="hosting">
+        <div class="block">
+            <img src="https://img.icons8.com/cotton/2x/server.png">
+            <p class="name">Виртуальный хостинг</p>
+            <p class="price">3.95$ в месяц</p>
+            <button>Подробнее</button>
+        </div>
+        <div class="block">
+            <img src="https://assets.dryicons.com/uploads/icon/svg/9857/1a9bd985-9072-460a-8a46-24bf9f73f496.svg">
+            <p class="name">Облачный хостинг</p>
+            <p class="price">68.95$ в месяц</p>
+            <button>Подробнее</button>
+        </div>
+        <div class="block">
+            <img src="data:image/png;base64,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">
+            <p class="name">Выделенный сервер</p>
+            <p class="price">217.95$ в месяц</p>
+            <button>Подробнее</button>
+        </div>
+</div>
+</body>
+</html>
