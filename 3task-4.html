@@ -11,18 +11,22 @@
 </head>
 
 <style>
-    body{
+    body {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
+
     .block1 {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         width: 100px;
         margin-right: 2px;
+        transition: 0.1s ease-in-out;
     }
-    .block1:hover{
+
+    .block1:hover {
         box-shadow: 0 0 10px -2px;
     }
 
