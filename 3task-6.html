@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test project</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="script.js"></script>
+</head>
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    div {
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 335px;
+        align-items: center;
+    }
+
+    .completed, .active, .incomplete {
+        justify-content: center;
+        border-radius: 50%;
+        width: 300px;
+        height: 35px;
+        font-size: 90%;
+    }
+
+    .completed {
+        background-color: #b8d052;
+        color: white;
+    }
+
+    .active {
+        background-color: #9f5298;
+        color: white;
+    }
+
+    .incomplete {
+        background-color: #cccccc;
+    }
+
+    .completed_line, .active_line, .incomplete_line {
+        height: 4px;
+    }
+
+    .completed_line {
+        background: #b8d052;
+    }
+
+    .active_line {
+        background: linear-gradient(to right, #b8d052 50%, #9d4a96);
+    }
+
+    .incomplete_line {
+        background: linear-gradient(to right, #9d4a96, #cbcbcb 50%);
+    }
+</style>
+
+<body>
+
+<div>
+    <div class="completed">1</div>
+    <div class="completed_line"></div>
+    <div class="completed">2</div>
+    <div class="completed_line"></div>
+    <div class="completed">3</div>
+    <div class="active_line"></div>
+    <div class="active">4</div>
+    <div class="incomplete_line"></div>
+    <div class="incomplete">5</div>
+</div>
+</body>
+</html>
