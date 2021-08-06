@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test project</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="script.js"></script>
+</head>
+
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: sans-serif;
+        background: #e5e5e5;
+    }
+
+    h1 {
+        color: red;
+        font-size: 300%;
+        margin: 30px 0 0 0;
+    }
+
+    .block {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1300px;
+        justify-content: center;
+    }
+
+    .block1 {
+        display: flex;
+        padding: 40px 30px;
+        width: 500px;
+        height: 230px;
+        background: white;
+        margin: 15px;
+        align-items: center;
+    }
+
+    .block2 {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0 20px 20px;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+
+    .name {
+        font-weight: bold;
+        font-size: 150%;
+    }
+
+    .price {
+        color: red;
+        font-weight: bold;
+    }
+
+    .descr {
+        font-style: italic;
+    }
+
+    button {
+        background: #e5e5e5;
+        border: none;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+    }
+
+    button:hover {
+        transition: 0.1s ease-in-out;
+        cursor: pointer;
+        background-color: #cecece;
+    }
+
+    .qwe {
+        font-style: italic;
+        width: 790px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    span {
+        display: flex;
+        flex-direction: row;
+        align-items: center
+    }
+
+    .link {
+        margin-left: 5px;
+        color: #f05510;;
+        cursor: pointer;
+    }
+
+    .link:hover {
+        color: red;
+    }
+
+    @media screen and (max-width: 1160px) {
+        img {
+            width: 150px;
+        }
+
+        .block1 {
+            width: 390px;
+        }
+    }
+
+    @media screen and (max-width: 950px) {
+        .block {
+            width: 900px;
+        }
+
+        img {
+            width: 250px;
+        }
+
+        .block1 {
+            width: 650px;
+        }
+    }
+
+    @media screen and (max-width: 780px) {
+        .block1 {
+            width: 500px;
+        }
+
+        .qwe {
+            width: 500px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .block {
+            width: 600px;
+        }
+
+        .qwe {
+            width: 300px;
+        }
+
+        .block1 {
+            width: 220px;
+            height: 410px;
+            flex-direction: column;
+        }
+        .block2{
+            padding: 20px 0;
+        }
+    }
+</style>
+
+<body>
+<h1>Меню</h1>
+<p class="qwe">Уникальные пиццы, приготовленные на дровах, или попробуйте
+    наши пасты, закуски, фокаччи, салаты и блюда брускетты.
+    Расслабьтесь в дружелюбной атмосфере, наслаждаясь ароматами
+    дровяной печи или посидев на свежем воздухе и понежившись в
+    лучах солнца Милдьюры.</p>
+<div class="block">
+    <div class="block1">
+        <img src="https://images03.nicepage.io/c461c07a441a5d220e8feb1a/910bd281016d57a199450c15/3981417.jpg">
+        <div class="block2">
+            <div>
+                <p class="name">Оригинал</p>
+                <p class="descr">Томатный соус, моцарелла и орегано</p>
+                <p class="price">$18.00</p>
+            </div>
+            <button>Добавить в корзину</button>
+        </div>
+    </div>
+    <div class="block1">
+        <img src="https://images03.nicepage.io/c461c07a441a5d220e8feb1a/6d842bd1e6e354edb2a8baed/pizza-dark-background-classic-italian-pizza-with-tomatoes-pepper-vegetables-sauce-mozarella-cheese-dark-kitchen-table-copy-space_90380-947.jpg">
+        <div class="block2">
+            <div>
+                <p class="name">Салями</p>
+                <p class="descr">Томатный соус, моцарелла и нежная салями</p>
+                <p class="price">$15.00</p>
+            </div>
+            <button>Добавить в корзину</button>
+        </div>
+    </div>
+    <div class="block1">
+        <img src="https://images03.nicepage.io/c461c07a441a5d220e8feb1a/d087beea5e3b5475974ecfe1/mixed-pizza-with-olive-bell-pepper-tomato_140725-183.jpg">
+        <div class="block2">
+            <div>
+                <p class="name">Курица</p>
+                <p class="descr">Томатный соус, моцарелла, курица, ананас * и соус барбекю</p>
+                <p class="price">$25.00</p>
+            </div>
+            <button>Добавить в корзину</button>
+        </div>
+    </div>
+    <div class="block1">
+        <img src="https://images03.nicepage.io/c461c07a441a5d220e8feb1a/457320aab346570eb0d91acd/sdw.jpg">
+        <div class="block2">
+            <div>
+                <p class="name">Гавайский</p>
+                <p class="descr">Томатный соус, моцарелла, ветчина и ананас</p>
+                <p class="price">$16.00</p>
+            </div>
+            <button>Добавить в корзину</button>
+        </div>
+    </div>
+</div>
+<span>Изображение из <p class="link">Freepik</p></span>
+</body>
+</html>
