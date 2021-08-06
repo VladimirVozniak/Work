@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test project</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="script.js"></script>
+</head>
+
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: sans-serif;
+    }
+
+    img {
+        border-radius: 50%;
+    }
+
+    h1 {
+        color: blue;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .img {
+        width: 850px;
+    }
+
+    .pos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: -200px;
+    }
+
+    .main_block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 1000px;
+    }
+
+    .block {
+        background-color: white;
+        box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
+        padding: 26px;
+        margin: 13px;
+        width: 250px;
+    }
+
+    .text1, .text2 {
+        margin-bottom: 0;
+    }
+
+    .text1 {
+        font-size: 150%;
+        font-weight: bold;
+    }
+
+    .text2 {
+        line-height: 1.5;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .link {
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+        margin: 0 0 0 5px;
+    }
+
+    @media screen and (max-width: 1100px) {
+        h1 {
+            width: auto;
+        }
+
+        .block {
+            width: 230px;
+        }
+    }
+
+    @media screen and (max-width: 950px) {
+        .pos {
+            top: -150px;
+        }
+
+        .img {
+            width: 670px;
+        }
+
+        .main_block {
+            width: 900px;
+        }
+
+        .block {
+            width: 300px;
+        }
+    }
+
+    @media screen and (max-width: 770px) {
+        .pos {
+            top: -100px;
+        }
+
+        .img {
+            width: 560px;
+        }
+
+        .block {
+            width: 230px;
+            margin: 25px;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        .pos {
+            top: -80px;
+        }
+
+        .img {
+            width: 400px
+        }
+
+        .main_block {
+            width: 500px;
+        }
+
+        .block {
+            width: 380px;
+        }
+    }
+</style>
+
+<body>
+<h1>
+    How to Search for a Home
+</h1>
+<img class="img" src="https://images03.nicepage.com/c461c07a441a5d220e8feb1a/e52fd3fef67e50928b010681/-min.jpg">
+<div class="pos">
+    <div class="main_block">
+        <div class="block">
+            <img src="">
+            <p class="text1">YOUR BUDGET</p>
+            <p class="text2">Sample text. Click to select the text box.
+                Click again or double click to start editing the text.</p>
+        </div>
+        <div class="block">
+            <img src="">
+            <p class="text1">YOUR BUDGET</p>
+            <p class="text2">Sample text. Click to select the text box.
+                Click again or double click to start editing the text.</p>
+        </div>
+        <div class="block">
+            <img src="">
+            <p class="text1">YOUR BUDGET</p>
+            <p class="text2">Sample text. Click to select the text box.
+                Click again or double click to start editing the text.</p>
+        </div>
+        <div class="block">
+            <img src="">
+            <p class="text1">YOUR BUDGET</p>
+            <p class="text2">Sample text. Click to select the text box.
+                Click again or double click to start editing the text.</p>
+        </div>
+        <div class="block">
+            <img src="">
+            <p class="text1">YOUR BUDGET</p>
+            <p class="text2">Sample text. Click to select the text box.
+                Click again or double click to start editing the text.</p>
+        </div>
+        <div class="block">
+            <img src="">
+            <p class="text1">YOUR BUDGET</p>
+            <p class="text2">Sample text. Click to select the text box.
+                Click again or double click to start editing the text.</p>
+        </div>
+    </div>
+    <span>IMAGE FROM <p class="link">FREEPIK</p></span>
+</div>
+</body>
+</html>
