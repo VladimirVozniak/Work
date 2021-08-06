@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test project</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="script.js"></script>
+</head>
+
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .loader {
+        width: 100px;
+    }
+
+    .loader-bar {
+        width: 100%;
+        height: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background: linear-gradient(to top, #868686, #3b3b3b);
+    }
+
+    .loader-status {
+        min-width: 0%;
+        max-width: 97%;
+        position: relative;
+        left: 1px;
+        top: -21px;
+        width: 50%;
+        height: 18px;
+        border: 1px solid #3889e7;
+        border-radius: 10px 0 0 10px;
+        background: linear-gradient(to top, #6bb6f3, #3c8de8, #6bb6f3);
+    }
+</style>
+
+<body>
+<div class="loader">
+    <div class="loader-bar"></div>
+    <div class="loader-status"></div>
+</div>
+</body>
+</html>
