@@ -132,15 +132,9 @@ const updateValueCost = (event) => {
 const onIconDelete = (elem, tasks) => {
     DeleteTask(elem._id)
 
-    console.log('tasks: ', tasks)
-    console.log('_id: ', elem._id)
-    console.log(elem)
-
     tasks = tasks.filter(task => task._id !== elem._id)
     localStorage.setItem('tasks', JSON.stringify(tasks))
-
-    console.log('tasks: ', tasks)
-
+    
     render(tasks)
 }
 
